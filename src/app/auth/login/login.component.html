@@ -1,0 +1,41 @@
+<div class="center-content">
+    <div class="logo-img">
+        <img src="/assets/img/namelogo.png"/>
+    </div>
+    <div class="contain">
+        <div class="card">
+            <div class="card-body">
+                <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start">
+                    <mat-tab label="Inicio de sesion">
+                        <form action="">
+                            <p>
+                                <mat-form-field appearance="fill">
+                                    <mat-label>Usuario</mat-label>
+                                    <input matInput placeholder="ejemplo@ejemplo.com">
+                                    <mat-icon matSuffix>person</mat-icon>
+                                  </mat-form-field>
+                              </p>
+                              <p>
+                                <mat-form-field appearance="fill">
+                                    <mat-label>Contraseña</mat-label>
+                                    <input matInput [type]="hide ? 'password' : 'text'">
+                                    <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                                      <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                                    </button>
+                                  </mat-form-field>
+                              </p>
+                              <div class="loginbutton">
+                                  <button mat-stroked-button color="primary" (click)="test()">Ingresar</button>
+                              </div>
+                        </form>
+                    </mat-tab>
+                    <mat-tab label="¿No tienes cuenta?">Content 2</mat-tab>
+                </mat-tab-group>
+            </div>
+            <div class="card-footer">
+                <div class="stats">
+                    <i class="material-icons">ads_click</i> <a (click)="openDialog()" class="problems">¿Tienes problemas para ingresar?</a>                </div>
+            </div>
+        </div>
+    </div>
+</div>

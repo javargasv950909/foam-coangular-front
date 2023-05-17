@@ -1,0 +1,52 @@
+.center-content {
+    .logo-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px auto;
+
+        img {
+            width: 300px;
+        }
+    }
+    .contain {
+        margin: 0px auto;
+        width: 700px;
+
+        .problems {
+            cursor: pointer;
+            color: #34558a;
+            font-weight: bold;
+        }
+    }
+    form {
+        margin: 25px;
+
+        .loginbutton {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            button {
+                width: 300px;
+            }
+        }
+    }
+}
+
+// .example-container mat-form-field + mat-form-field {
+//     margin-left: 8px;
+//   }
+  
+//   .example-right-align {
+//     text-align: right;
+//   }
+  
+//   input.example-right-align::-webkit-outer-spin-button,
+//   input.example-right-align::-webkit-inner-spin-button {
+//     display: none;
+//   }
+  
+//   input.example-right-align {
+//     -moz-appearance: textfield;
+//   }
